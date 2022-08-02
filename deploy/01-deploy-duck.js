@@ -1,15 +1,13 @@
-/*const args = [];
+const args = [10 ** 9];
 module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
-  await deploy("MyContract", {
+  await deploy("Duck", {
     from: deployer,
     args: args,
-    value: lockedAmount,
     log: true,
     waitConfirmations: network.config.blockConfirmations || 1,
   });
 };
 
-module.exports.tags = ["all", "MyContract"];
-*/
+module.exports.tags = ["all", "Duck"];
