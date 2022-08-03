@@ -20,6 +20,7 @@ contract Ducks is ERC721 {
 
     uint256 public s_tokenCounter;
 
+    // to modify mapping should be admin
     mapping(Spec => uint256) public specValues;
 
     event NftMinted(Spec spec, address minter);
@@ -33,7 +34,6 @@ contract Ducks is ERC721 {
     }
 
     function mintDuck(Spec _spec) public payable {
-        // send value to?
         if (msg.value < specValues[_spec]) {
             revert Ducks__NOT_ENOUGH_ETH();
         }

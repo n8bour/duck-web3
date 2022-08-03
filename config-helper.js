@@ -10,4 +10,14 @@ const Spec = {
     PLEB: 4,
 }
 
-module.exports = { INITIAL_SUPPLY, DECIMALS, developmentChains, Spec }
+const Items = {
+    HEAD: 0,
+    HANDS: 1,
+    CHEST: 2,
+    LEGS: 3,
+    BOOTS: 4,
+    WEAPON: 5,
+    SHIELD: 6,
+}
+
+module.exports = { INITIAL_SUPPLY, DECIMALS, developmentChains, Spec, Items }
