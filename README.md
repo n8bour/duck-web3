@@ -1,13 +1,12 @@
-# Duck Web3 Project
+# **Duck Web3 Project**
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Create a game with currency, characters and armor using this standards: 
+-  ERC20 for tokens
+-  ERC721 for characters (royalties?)
+-  ERC1155 for armor
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+### **Plugins**
+
+You should instal plugin ```hardhat-deploy``` and override the hardhat-ethers with the ethers from hardhat-deploy-ethers, follow the instructions: [hardhat-deploy#installation](https://github.com/wighawag/hardhat-deploy#installation)
+
